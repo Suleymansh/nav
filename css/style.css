@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+/* ahshagida yaranmish mesafani aradan qaldirmaq ucun */
+body,html{
+    overflow-x: hidden;
+}
+
+
+
+/* navbar */
+
+.navbar{
+    /* background-color: yellow; */
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: aliceblue;
+    top: 0;
+    left: 0;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-links li{
+margin: 0 20px;
+}
+.active{
+    color: brown;
+    text-decoration: underline;
+    font-weight: bolder                                                              ;
+}
+
+header{
+ width: 100vw;
+ height: 100vh;
+ background-image: url('../img/headpic.webp');
+ background-size: cover;
+ background-position: center;
+ display: flex;
+ align-items: flex-end;
+ justify-content: center;
+}
+.head-content{
+margin-bottom: 150px;
+color: white;
+text-align: center;
+}
+.head-content h2{
+    font-size: 2rem;
+}
+.line{
+    width: 150px;
+    height: 3px;
+    background-color: brown;
+    margin: 7px auto;
+}
+.head-content h1{
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.ctn{
+    background-color: brown;
+    color: wheat;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.menu-btn{
+    position: absolute;
+    font-size: 40px;
+    color: aliceblue;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    /* display: none; */
+ visibility: hidden;
+}
+
+.close-btn{
+     position: absolute;
+    font-size: 40px;
+    color: aliceblue;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+
+}
+/* mobile  */
+@media (max-width:850px){
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links{
+     flex-direction: column;
+     margin: 0 auto;
+     justify-content: center;
+     width: 100%;
+     height: 100vh;
+     background-color: cornflowerblue;
+     margin-top: -900px;
+     transition: all 0.5s ease;
+   
+     
+    }
+    .nav-links li{
+        margin: 15px auto;
+
+    }
+    .active-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+      
+    }
+    .menu-btn{
+      visibility: visible;
+    }
+    .close-btn{
+        display: block;
+      
+    }
+}
+
+
+
